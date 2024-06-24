@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #0c0813;
+                min-height: 100vh;
+                color: #111111;
+                font-family: sans-serif;
+            }
+
+            h1 {
+                text-align: center;
+                color: #177298;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                background-color: #ffa387;
+                padding: 1.5rem;
+                width: 30rem;
+                border-radius: 15px;
+                box-shadow: 0 0 10px #ccc;
+            }
+
+            label {
+                padding-left: 0.3rem;
+                margin-bottom: 0.3rem;
+            }
+
+            input {
+                border-radius: 5px;
+                padding: 0.5rem 1rem;
+                outline: none;
+                border: 0;
+                font-family: inherit;
+                font-size: 1rem;
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                margin-bottom: 1rem;
+            }
+
+            input[type="submit"] {
+                background-color: #177298;
+                padding: 0.5rem;
+                color: #000000;
+                font-family: inherit;
+                border: none;
+                cursor: pointer;
+                transition: background-color 200ms linear;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>Aplicacion con framework SpringBoot</h1>
+            <form action="/AA3_EV01/login" method="post">
+                <label for="usuario">Usuairo</label>
+                <input type="text" name="usuario" id="usuario">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="contraseña" id="contraseña">
+                <input type="submit" value="Iniciar Sesión" />
+            </form>
+        </section>
+    </body>
+</html>
